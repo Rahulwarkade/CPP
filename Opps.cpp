@@ -147,7 +147,7 @@ class Base
 	{
 		cout<<"Base class fun "<<endl;
 	}
-	virtual void display()
+	void display()
 	{
 		cout<<"Base class display"<<endl;
 	}
