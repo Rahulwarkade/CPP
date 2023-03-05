@@ -142,6 +142,35 @@ void deleteVal(Node* &head,int val)
 	cout<<"Give value is not found in linked list\n";
 	return;
 }
+
+Node* reverseLL(Node* &head)
+{
+	Node* prev = NULL;
+	Node* curr = head;
+	Node* next;
+
+	while(curr!=NULL)
+	{
+		next = curr->next;
+		curr->next = prev;
+
+		prev = curr;
+		curr = next;
+	}
+
+	return prev;
+}
+
+Node* recursiveReversLL(Node* &head)
+{
+	if(head==NULL || head->next== NULL) return head;
+
+	Node* newNode = recursiveReversLL(head->next);
+	head->next->next = head;
+	head->next = NULL;
+
+	return newNode;
+}
 int main()
 {
 	Node* head;
@@ -152,7 +181,13 @@ int main()
 	insertAtFirst(1,head);
 	insertAtLast(4,head);
 	printLL(head);
-	deleteVal(head,3);
+	// deleteVal(head,3);
+
+	//iterative method
+	// head = reverseLL(head);
+
+	//recursive method
+	head = recursiveReversLL(head);
 	printLL(head);
 	// cout<<searchInLL(head,3)<<endl;
 
