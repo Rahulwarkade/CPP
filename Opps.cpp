@@ -19,13 +19,13 @@ class Student
 		age = ag;
 		gender = gen;
 	}	
-	// Student(Student &obj)
-	// {
-	// 	cout<<"Copy constructor is called"<<endl;
-	// 	name = obj.name;
-	// 	age = obj.age;
-	// 	gender = obj.gender;
-	// }
+	Student(Student &obj)
+	{
+		cout<<"Copy constructor is called"<<endl;
+		name = obj.name;
+		age = obj.age;
+		gender = obj.gender;
+	}
 
 	void print()
 	{
