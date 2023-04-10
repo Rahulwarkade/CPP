@@ -45,7 +45,7 @@ int main()
   // cout<<str<<endl;
 
   // 5 clear()
-  // str.clear();
+   str.clear();
   // (str=="")?cout<<"string is empty":cout<<"string is not empty"<<endl; 
 
   // 6 compare()
