@@ -29,10 +29,10 @@ int main()
     }
   for(int i=0; i<n; i++)
     {
-      // if(maxNmin[i]>maxNo)
-      //   maxNo = maxNmin[i];
-      // if(maxNmin[i]<minNo)
-      //  minNo = maxNmin[i];
+        if(maxNmin[i]>maxNo)
+         maxNo = maxNmin[i];
+       if(maxNmin[i]<minNo)
+        minNo = maxNmin[i];
       maxNo = max(maxNo,maxNmin[i]);
       minNo = min(minNo, maxNmin[i]);
     }
