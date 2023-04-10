@@ -49,7 +49,7 @@ int main()
 {
   int n;
   cin>>n;
-  // primeSieve(n);
+  primeSieve(n);
   primeFactor(n);
   return 0;
 }
