@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
   // different way of taking input
-  // string str;
-  // cin>>str;
+   string str;
+   cin>>str;
   // cin.ignore();
   // cout<<str;
   // string s = "rahul kumar warkade warkade warkade";
