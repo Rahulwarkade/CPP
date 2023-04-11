@@ -7,8 +7,8 @@ int main()
   // different way of taking input
    string str;
    cin>>str;
-  // cin.ignore();
-  // cout<<str;
+   cin.ignore();
+  cout<<str;
   // string s = "rahul kumar warkade warkade warkade";
   // cout<<s<<endl;
   // string s2(5,'n');
