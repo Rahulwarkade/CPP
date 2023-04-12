@@ -11,9 +11,9 @@ int main()
   cout<<str;
   // string s = "rahul kumar warkade warkade warkade";
   // cout<<s<<endl;
-  // string s2(5,'n');
-  // cout<<s2<<endl;
-  // string abc(str);
+  string s2(5,'n');
+  cout<<s2<<endl;
+  string abc(str);
   // cout<<abc<<endl;
   // // taking input using getline function
   // string space;
