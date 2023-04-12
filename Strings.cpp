@@ -9,8 +9,8 @@ int main()
    cin>>str;
    cin.ignore();
   cout<<str;
-  // string s = "rahul kumar warkade warkade warkade";
-  // cout<<s<<endl;
+  string s = "rahul kumar warkade warkade warkade";
+  cout<<s<<endl;
   string s2(5,'n');
   cout<<s2<<endl;
   string abc(str);
