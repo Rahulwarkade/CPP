@@ -28,9 +28,9 @@ int main()
   // cin.ignore();
   // cout<<ap.append(" is very smart boy ")<<endl;
   //  anoter way to to do this
-//   string s2 = " adding adding";
-//   ap +=s2;
-//   cout<<ap<<endl;
+  string s2 = " adding adding";
+  ap +=s2;
+  cout<<ap<<endl;
 
   // 2. assing()
   // string st = "nincompoop";
