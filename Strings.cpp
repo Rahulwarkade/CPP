@@ -14,12 +14,12 @@ int main()
   string s2(5,'n');
   cout<<s2<<endl;
   string abc(str);
-  // cout<<abc<<endl;
+  cout<<abc<<endl;
   // // taking input using getline function
-  // string space;
-  // getline(cin,space);
-  // // cin.ignore();
-  // cout<<space<<endl;
+  string space;
+  getline(cin,space);
+  cin.ignore();
+  cout<<space<<endl;
 
   // different function of strings
   // 1 append()
