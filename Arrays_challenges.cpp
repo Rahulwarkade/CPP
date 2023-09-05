@@ -3,15 +3,15 @@ using namespace std;
 int main()
 {
   // MAX TILL A[i]
-  // int n,mx = INT_MIN;
-  // cin>>n;
-  // int array[n];
-  // for(int i=0; i<n; i++) cin>>array[i];
-  // for(int i=0; i<n; i++)
-  //   {
-  //   mx = max(mx,array[i]);
-  //   cout<<mx<<" ";
-  //   }
+  int n,mx = INT_MIN;
+  cin>>n;
+  int array[n];
+  for(int i=0; i<n; i++) cin>>array[i];
+  for(int i=0; i<n; i++)
+    {
+    mx = max(mx,array[i]);
+    cout<<mx<<" ";
+    }
  // SUM OF ALL SUBARRAYS
   // int n,sum=0; 
   // cin>>n; 
