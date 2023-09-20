@@ -4,31 +4,31 @@ int main()
 {
   // FIRST REPEATING ELEMENT
   
-  // int n; cin>>n; int array[n];
-  // for(int i=0; i<n; i++)cin>>array[i];
-  // int minidx = INT_MAX;
-  // const int N = 1e6;
-  // int check[N];
-  // for(int i=0; i<N; i++)check[i]=-1;
-  // for(int i=0; i<n; i++)
-  //   {
-  //     if(check[array[i]]!=-1)
-  //     {
-  //       minidx = min(minidx,check[array[i]]);
-  //     }
-  //     else
-  //     {
-  //       check[array[i]] = i;
-  //     }
-  //   }
-  // if(minidx==INT_MAX)
-  // {
-  //   cout<<"-1"<<endl;
-  // }
-  // else
-  // {
-  //   cout<<minidx+1<<endl;
-  // 
+  int n; cin>>n; int array[n];
+  for(int i=0; i<n; i++)cin>>array[i];
+  int minidx = INT_MAX;
+  const int N = 1e6;
+  int check[N];
+  for(int i=0; i<N; i++)check[i]=-1;
+  for(int i=0; i<n; i++)
+    {
+      if(check[array[i]]!=-1)
+      {
+        minidx = min(minidx,check[array[i]]);
+      }
+      else
+      {
+        check[array[i]] = i;
+      }
+    }
+  if(minidx==INT_MAX)
+  {
+    cout<<"-1"<<endl;
+  }
+  else
+  {
+    cout<<minidx+1<<endl;
+  
 
   // // SUBARRAY WITH GIVEN SUM
   // int n,s; cin>>n;cin>>s; int array[n];
