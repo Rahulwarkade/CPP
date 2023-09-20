@@ -34,16 +34,16 @@ int main()
   int n,s; cin>>n;cin>>s; int array[n];
   for(int i=0; i<n; i++) cin>>array[i];
   int st=0-1,en=-1,i=0,j=0,sum=0;
-  // while(j<n && sum + array[j] <= s)
-  //   {
-  //     sum+=array[j];
-  //     j++;
-  //   }
-  // if(sum==s)
-  // {
-  //   cout<<i+1<<" "<<j<<endl;
-  //   return 0;
-  // }
+  while(j<n && sum + array[j] <= s)
+    {
+      sum+=array[j];
+      j++;
+    }
+  if(sum==s)
+  {
+    cout<<i+1<<" "<<j<<endl;
+    return 0;
+  }
   while(j<n)
     {
       sum+=array[j];
