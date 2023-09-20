@@ -31,37 +31,37 @@ int main()
   
 
   // // SUBARRAY WITH GIVEN SUM
-  // int n,s; cin>>n;cin>>s; int array[n];
-  // for(int i=0; i<n; i++) cin>>array[i];
-  // int st=0-1,en=-1,i=0,j=0,sum=0;
-  // // while(j<n && sum + array[j] <= s)
-  // //   {
-  // //     sum+=array[j];
-  // //     j++;
-  // //   }
-  // // if(sum==s)
-  // // {
-  // //   cout<<i+1<<" "<<j<<endl;
-  // //   return 0;
-  // // }
-  // while(j<n)
+  int n,s; cin>>n;cin>>s; int array[n];
+  for(int i=0; i<n; i++) cin>>array[i];
+  int st=0-1,en=-1,i=0,j=0,sum=0;
+  // while(j<n && sum + array[j] <= s)
   //   {
   //     sum+=array[j];
-  //     while(sum>s)
-  //       {
-  //         sum-=array[i];
-  //         i++;
-  //       }
-  //     if(sum==s)
-  //     {
-  //       st = i+1;
-  //       en=j+1;
-  //       cout<<st<<" "<<en<<endl;
-  //       break;
-  //     }
   //     j++;
   //   }
-  // cout<<st<<" "<<en<<endl;
+  // if(sum==s)
+  // {
+  //   cout<<i+1<<" "<<j<<endl;
+  //   return 0;
+  // }
+  while(j<n)
+    {
+      sum+=array[j];
+      while(sum>s)
+        {
+          sum-=array[i];
+          i++;
+        }
+      if(sum==s)
+      {
+        st = i+1;
+        en=j+1;
+        cout<<st<<" "<<en<<endl;
+        break;
+      }
+      j++;
+    }
+  cout<<st<<" "<<en<<endl;
 
   // SMALLEST POSITIVE MISSING NUMBER
   int n; cin>>n; int array[n];
